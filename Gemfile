@@ -43,4 +43,5 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'active_model_serializers', '~> 0.10.12'
+gem 'faker', '~> 2.15', '>= 2.15.1'
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
