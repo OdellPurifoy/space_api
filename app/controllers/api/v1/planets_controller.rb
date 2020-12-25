@@ -14,7 +14,7 @@ module Api
 
       # GET /planets/1
       def show
-        render json: @planet
+        render json: @planet, include: ['moons']
       end
 
       # POST /planets
