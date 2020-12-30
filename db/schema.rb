@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_12_24_005908) do
+ActiveRecord::Schema.define(version: 2020_12_30_010041) do
 
   create_table "moons", force: :cascade do |t|
     t.string "moon_name"
@@ -24,6 +24,10 @@ ActiveRecord::Schema.define(version: 2020_12_24_005908) do
     t.string "name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "planet_type"
+    t.decimal "surface_temp"
+    t.string "surface_type"
+    t.string "core_type"
   end
 
   add_foreign_key "moons", "planets"
